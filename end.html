@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Quiz</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <style>
+      #showcase .points {
+        font-size: 37px;
+        font-weight: bolder;
+      }
+      #showcase .msghere .prevscore {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="showcas">
+      <div  class="bucket">
+        <div class="showcase-content" id="bucket">
+          <h1 class="headmsg"  id= "headone"></h1>
+          <!--<br />
+          <h1><span class="points"></span></h1>
+          <br />-->
+          <br />
+          <p class="msghere"></p>
+          <!--<a class="btn" href="index.html">Start over</a>-->
+        </div>
+      </div>
+      
+<br><br>
+      <div class="footer-container">
+        <div>
+          <h2>Receive a list with personalized tips for your type!</h2>
+          <br>
+    
+          <div> <form action="https://formspree.io/f/myybwdeq" method="POST" id="my-form">
+            <div class="form-group">
+            <label for="firstname"></label>
+            <input type="text" name="firstname" placeholder="Enter name"/>
+            </div>
+            <div class="form-group">
+              <label for="lastname"></label>
+              <input type="text" name="lastname" placeholder="Enter name"/>
+              </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="email" name="email" placeholder="Enter Email"  required />
+            </label></div>
+            
+            <button type="submit" class=" btn-primary" >Submit</button>
+          
+          </form>
+        </div>
+        <div id="status"></div>
+      </div>
+    </div>
+    <!-- user info -->
+    <script src="dist/js/userInfo.js"></script>
+  </body>
+</html>
