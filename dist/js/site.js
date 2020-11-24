@@ -108,11 +108,11 @@ let questions = [
 let question_count = 0;
 //let points = 0;
 Max_Questions = 12;
-let observerpoints = 0;
-let influencerpoints = 0;
-let overthinkerpoints = 0;
-let postponerpoints = 0;
-let plannerpoints = 0;
+let observerPoints = 0;
+let influencerPoints = 0;
+let overthinkerPoints = 0;
+let postponerPoints = 0;
+let plannerPoints = 0;
 
 window.onload = function () {
   show(question_count);
@@ -140,7 +140,7 @@ function next(e) {
     user_answer === "Private, I rarely post anything anyway" ||
     user_answer === "I never edit my photos"
   ) {
-    observerpoints += 1;
+    observerPoints += 1;
   }
   /////////////////organised planner
   else if (
@@ -153,7 +153,7 @@ function next(e) {
       "Public, I need it to be able to sell my products and services" ||
     user_answer === "It depends on the picture"
   ) {
-    plannerpoints += 1;
+    plannerPoints += 1;
   }
   ///////////////////postponer
   else if (
@@ -163,7 +163,7 @@ function next(e) {
     user_answer === "Any time I feel like it" ||
     user_answer === "Sometimes throughout the week"
   ) {
-    postponerpoints += 1;
+    postponerPoints += 1;
   } //////////////////the influencer
   else if (
     user_answer === "Take pictures to post on my Instagram" ||
@@ -177,7 +177,7 @@ function next(e) {
       "Public, my followers love to see the places I go and what I do" ||
     user_answer === "More than 15 minutes"
   ) {
-    influencerpoints += 1;
+    influencerPoints += 1;
   }
   /////////////////////over thinker
   else if (
@@ -190,13 +190,13 @@ function next(e) {
     user_answer === "Private, my posts are very personal to me" ||
     user_answer === "Way too long…"
   ) {
-    overthinkerpoints += 1;
+    overthinkerPoints += 1;
   }
-  sessionStorage.setItem("observerpoints", observerpoints);
-  sessionStorage.setItem("postponerpoints", postponerpoints);
-  sessionStorage.setItem("overthinkerpoints", overthinkerpoints);
-  sessionStorage.setItem("plannerpoints", plannerpoints);
-  sessionStorage.setItem("influencerpoints", influencerpoints);
+  sessionStorage.setItem("observerPoints", observerPoints);
+  sessionStorage.setItem("postponerPoints", postponerPoints);
+  sessionStorage.setItem("overthinkerPoints", overthinkerPoints);
+  sessionStorage.setItem("plannerPoints", plannerPoints);
+  sessionStorage.setItem("influencerPoints", influencerPoints);
   //let coloranswer = document.querySelector("li.option.active");
   //e.target.coloranswer.classList.add("correct");
 

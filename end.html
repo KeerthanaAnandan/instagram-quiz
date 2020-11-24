@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>JavaScript Quiz</title>
+    <title>What type of Instagrammer are you?</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
     <!-- style.css -->
     <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+  />
     <style>
       #showcase .points {
         font-size: 37px;
@@ -45,16 +49,17 @@
           <div> <form action="https://formspree.io/f/myybwdeq" method="POST" id="my-form">
             <div class="form-group">
             <label for="firstname"></label>
-            <input type="text" name="firstname" placeholder="Enter name"/>
+            <input type="text" name="firstname" placeholder="Enter Name"/>
             </div>
-            <div class="form-group">
-              <label for="lastname"></label>
-              <input type="text" name="lastname" placeholder="Enter name"/>
-              </div>
+         
             <div class="form-group">
               <label for="email"></label>
               <input type="email" name="email" placeholder="Enter Email"  required />
             </label></div>
+            <div class="form-group">
+              <label for="usertype"></label>
+              <input class="usertype"type="text" name="usertype"/>
+              </div>   
             
             <button type="submit" class=" btn-primary" >Submit</button>
           
@@ -62,8 +67,33 @@
         </div>
         <div id="status"></div>
       </div>
+      <div class="share-btn-container">
+        <a href="#" class="facebook-btn">
+          <i class="fab fa-facebook"></i>
+        </a>
+  
+        <a href="#" class="instagram-btn">
+          <i class="fab fa-instagram"></i>
+        </a>
+  
+      
+  
+        <a href="#" class="linkedin-btn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+  
+        <a href="#" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        
+      </div>
+      
+               
+            
     </div>
     <!-- user info -->
     <script src="dist/js/userInfo.js"></script>
+
+   
   </body>
 </html>
