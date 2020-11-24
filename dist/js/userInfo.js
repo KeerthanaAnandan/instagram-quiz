@@ -201,7 +201,7 @@ https://www.linkedin.com/shareArticle?url=[post-url]&title=[post-title]
 */
 
 const facebookBtn = document.querySelector(".facebook-btn");
-const instagramBtn = document.querySelector(".instagram-btn");
+const twitterBtn = document.querySelector(".twitter-btn");
 
 const linkedinBtn = document.querySelector(".linkedin-btn");
 const whatsappBtn = document.querySelector(".whatsapp-btn");
@@ -216,10 +216,10 @@ function init() {
     `https://www.facebook.com/sharer.php?u=${postUrl}`
   );
 
-  instagramBtn.setAttribute(
+  twitterBtn.setAttribute(
     "href",
 
-    `https://www.instagram.com/share/?url=${postUrl}`
+    `https://twitter.com/share?url=${postUrl}&text=${postTitle}`
   );
 
   // linkedinBtn.setAttribute(
