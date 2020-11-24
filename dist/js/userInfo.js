@@ -218,7 +218,8 @@ function init() {
 
   instagramBtn.setAttribute(
     "href",
-    `https://instagram.com/share?url=${postUrl}&text=${postTitle}`
+
+    `https://www.instagram.com/share/?url=${postUrl}`
   );
 
   // linkedinBtn.setAttribute(

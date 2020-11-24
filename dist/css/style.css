@@ -327,6 +327,9 @@ li {
 .footer-container input[type="submit"] {
   width: 50%;
 }
+.footer-container #btbtn {
+  margin: auto;
+}
 .bucket {
   display: block;
   justify-content: center;
@@ -548,9 +551,9 @@ li {
 
     padding: 20px 50px;
     width: 80%;
-    margin-left: 1rem;
-    font-size: 12px;
-
+    margin-left: 2rem;
+    font-size: 20px;
+    line-height: 17px;
     font-family: "Roboto", sans-serif;
     background-color: #eb145c;
 
@@ -572,5 +575,11 @@ li {
   }
   .center-item {
     font-size: 10px;
+  }
+  .footer-container {
+    line-height: 5px;
+  }
+  .footer-container #btbtn {
+    margin: auto;
   }
 }
